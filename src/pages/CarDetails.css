@@ -1,0 +1,221 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 205px;
+  }
+  
+  .car-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .car-info-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .car-condition,
+  .car-year,
+  .car-mileage {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .car-condition {
+    color: #e30613;
+    font-weight: bold;
+  }
+  
+  .price-container {
+    text-align: left;
+  }
+  
+  .price-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  .price-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e30613;
+  }
+  
+  .car-specs {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  .car-specs td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  
+  .car-specs td:nth-child(odd) {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+  
+  .car-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button, .dealer-profile-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #e30613;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button:hover, .dealer-profile-button:hover {
+    background-color: #c40000;
+  }
+  
+  .dealer-profile-button {
+    background-color: #333;
+  }
+  
+  .dealer-profile-button:hover {
+    background-color: #555;
+  }
+  
+  .dealer-profile {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .dealer-profile h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .dealer-info p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .message-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .message-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .message-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .message-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-buttons button[type="submit"] {
+    background-color: #e30613;
+    color: white;
+  }
+  
+  .form-buttons button[type="button"] {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .car-details-loading,
+  .car-details-error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 2rem;
+  }
+  
+  .car-details-error {
+    color: #e30613;
+  }
+  
+  @media (max-width: 600px) {
+    .car-header {
+      flex-direction: column;
+    }
+  
+    .price-container {
+      margin-top: 1rem;
+    }
+  
+    .car-specs td {
+      display: block;
+    }
+  
+    .car-specs tr {
+      margin-bottom: 1rem;
+      display: block;
+    }
+  
+    .car-specs td:nth-child(odd) {
+      border-bottom: none;
+    }
+  }

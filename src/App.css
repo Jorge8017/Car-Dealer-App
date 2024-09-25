@@ -1,0 +1,161 @@
+/* Base styles (mobile-first) */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  background: white;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 24px;
+  width: auto;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-menu.active {
+  display: flex;
+}
+
+.navbar-menu li {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-menu a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e30613;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c40000;
+}
+
+/* Responsive styles for larger screens */
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo-image {
+    height: 30px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .navbar-menu li {
+    width: auto;
+    margin-left: 1.5rem;
+  }
+
+  .navbar-menu a {
+    padding: 0;
+  }
+
+  .navbar-menu a:hover {
+    color: #e30613;
+    background-color: transparent;
+  }
+
+  .logout-button {
+    width: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+}
+
+/* Additional responsive styles for specific components */
+@media screen and (min-width: 1024px) {
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,106 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: calc(33.333% - 14px);
+}
+
+.dashboard-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.card-divider {
+  height: 2px;
+  background-color: #e30613;
+  margin-bottom: 15px;
+}
+
+.card-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.item-value {
+  color: #666;
+}
+
+.view-all-button {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #e30613;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #c40000;
+}
+
+.dashboard-loading, .dashboard-error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 50px;
+}
+
+.dashboard-error {
+  color: #e30613;
+}
+
+@media (max-width: 992px) {
+  .dashboard-card {
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+  
+  .dashboard-card {
+    max-width: 100%;
+  }
+}

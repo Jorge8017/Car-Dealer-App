@@ -1,0 +1,119 @@
+.dealer-cars {
+    margin-top: 2rem;
+  }
+  
+  .dealer-cars-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .dealer-car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dealer-car-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 120px;
+  }
+  
+  .dealer-car-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dealer-car-image {
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .dealer-car-info {
+    flex: 1;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .dealer-car-name {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .dealer-car-info p {
+    margin: 0 0 0.25rem 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .dealer-car-price {
+    font-weight: bold;
+    color: #e30613;
+  }
+  
+  .dealer-car-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #da190b;
+  }
+  
+  @media (max-width: 768px) {
+    .dealer-car-card {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .dealer-car-image {
+      width: 100%;
+      height: 160px;
+    }
+  
+    .dealer-car-actions {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .edit-button, .delete-button {
+      margin-bottom: 0;
+      flex: 1;
+    }
+  }

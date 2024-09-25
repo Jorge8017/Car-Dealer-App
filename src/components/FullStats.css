@@ -1,0 +1,108 @@
+.full-stats-container {
+  max-width: 1600px; /* Increased from 1400px for more width */
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.full-stats-header {
+  background-color: #555;
+  color: white;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.full-stats-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}
+
+.month-selector {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: none;
+  width: auto;
+  max-width: 140px;
+}
+
+.full-stats-dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Fixed height for all cards */
+}
+
+.stat-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Adjust the ResponsiveContainer in the React component to match this height */
+.stat-card .recharts-responsive-container {
+  height: 230px !important; /* Adjust this value as needed */
+}
+
+@media (max-width: 1400px) {
+  .full-stats-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .full-stats-dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .full-stats-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    height: 350px; /* Slightly taller for better visibility on smaller screens */
+  }
+
+  .stat-card .recharts-responsive-container {
+    height: 280px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .full-stats-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .full-stats-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .month-selector {
+    width: 100%;
+    max-width: none;
+  }
+
+  .stat-card {
+    height: 300px;
+  }
+
+  .stat-card .recharts-responsive-container {
+    height: 230px !important;
+  }
+}

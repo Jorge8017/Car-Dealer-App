@@ -1,0 +1,66 @@
+.image-upload-container {
+  margin-bottom: 1rem;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+
+.dropzone.active {
+  border-color: #2196f3;
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.dropzone:hover {
+  border-color: #2196f3;
+}
+
+.image-previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.image-preview-container {
+  position: relative;
+}
+
+.preview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.remove-image {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e30613;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-image:hover {
+  background-color: #c40000;
+}

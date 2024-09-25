@@ -1,0 +1,144 @@
+.cars-list-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cars-list-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+}
+
+.cars-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cars-table th,
+.cars-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cars-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cars-table tr:last-child td {
+  border-bottom: none;
+}
+
+.car-image {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-car-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e30613;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-car-button:hover {
+  background-color: #c40000;
+}
+
+.cars-loading,
+.cars-error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 50px;
+}
+
+.cars-error {
+  color: #e30613;
+}
+
+@media (max-width: 768px) {
+  .cars-list-title {
+    font-size: 1.2rem;
+  }
+
+  .cars-table {
+    font-size: 0.9rem;
+  }
+
+  .cars-table th,
+  .cars-table td {
+    padding: 8px;
+  }
+
+  .car-image {
+    width: 60px;
+    height: 45px;
+  }
+
+  .edit-button,
+  .delete-button {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}
