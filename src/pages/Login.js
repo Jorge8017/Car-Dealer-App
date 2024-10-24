@@ -9,9 +9,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Set a dummy token to simulate logged-in state
     localStorage.setItem('token', 'dummy-token');
-    // Navigate to dashboard
     navigate('/dashboard');
   };
 
