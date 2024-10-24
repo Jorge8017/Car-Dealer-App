@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3000/api';
 
-// Mock data
 const mockFeaturedCars = [
   { id: 1, make: 'Toyota', model: 'Camry', year: 2022, price: 25000, image: '/images/default-car.jpg', mileage: 15000, condition: 'Used', variant: 'LE', stockNo: 'TC001', vin: '1HGBH41JXMN109186', mmCode: 'CAM22', demoCar: false, colour: 'Silver', serviceHistory: 'Full dealer service history', motorPlan: '3 years/60,000 km', warranty: '5 years/100,000 km', extras: 'Bluetooth, Backup Camera', region: 'Western Cape', city: 'Cape Town', description: 'Well-maintained Toyota Camry with low mileage. Perfect for family use.' },
   { id: 2, make: 'Honda', model: 'Civic', year: 2023, price: 22000, image: '/images/default-car.jpg', mileage: 5000, condition: 'New', variant: 'Sport', stockNo: 'HC001', vin: '2HGFC2F59MH501234', mmCode: 'CIV23', demoCar: true, colour: 'Red', serviceHistory: 'First service done', motorPlan: '5 years/100,000 km', warranty: '5 years/unlimited km', extras: 'Sunroof, Apple CarPlay', region: 'Gauteng', city: 'Johannesburg', description: 'Brand new Honda Civic with sporty features. Ideal for city driving.' },
@@ -63,7 +62,6 @@ const mockProfile = {
 
 export const login = async (email, password) => {
   if (process.env.REACT_APP_USE_MOCK_DATA === 'true') {
-    // For demonstration purposes only. In a real app, never store passwords in code.
     if (email === 'demo@example.com' && password === 'password') {
       return new Promise(resolve => 
         setTimeout(() => resolve({ token: 'mock-jwt-token' }), 500)
