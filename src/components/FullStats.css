@@ -1,5 +1,5 @@
 .full-stats-container {
-  max-width: 1600px; /* Increased from 1400px for more width */
+  max-width: 1600px; 
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -52,9 +52,8 @@
   margin-bottom: 0.5rem;
 }
 
-/* Adjust the ResponsiveContainer in the React component to match this height */
 .stat-card .recharts-responsive-container {
-  height: 230px !important; /* Adjust this value as needed */
+  height: 230px !important; 
 }
 
 @media (max-width: 1400px) {
@@ -74,7 +73,7 @@
   }
 
   .stat-card {
-    height: 350px; /* Slightly taller for better visibility on smaller screens */
+    height: 350px; 
   }
 
   .stat-card .recharts-responsive-container {
