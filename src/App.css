@@ -1,4 +1,3 @@
-/* Base styles (mobile-first) */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -20,7 +19,6 @@ body {
   background: white;
 }
 
-/* Navbar styles */
 .navbar {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -102,7 +100,6 @@ body {
   background-color: #c40000;
 }
 
-/* Responsive styles for larger screens */
 @media screen and (min-width: 768px) {
   .navbar-container {
     padding: 1rem;
@@ -152,7 +149,6 @@ body {
   }
 }
 
-/* Additional responsive styles for specific components */
 @media screen and (min-width: 1024px) {
   .content {
     max-width: 1200px;
